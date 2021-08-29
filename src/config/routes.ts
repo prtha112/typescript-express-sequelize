@@ -1,10 +1,12 @@
 import { Request, Response } from "express";
 import { NodesController } from "../controllers/nodes.controller";
 import { LinksController } from "../controllers/links.controller";
+import { CategorysController } from '../controllers/categorys.controller'
 
 export class Routes {
   public nodesController: NodesController = new NodesController();
   public linksController: LinksController = new LinksController();
+  public categoryController: CategorysController = new CategorysController();
 
   public routes(app: any): void {
     app.route("/").get(this.nodesController.index);
@@ -30,5 +32,10 @@ export class Routes {
       .get(this.linksController.show)
       .put(this.linksController.update)
       .delete(this.linksController.delete);
+
+    app
+      .route("/category")
+      .get(this.categoryController.index)
+      .post(this.categoryController.create);
   }
 }
