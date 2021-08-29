@@ -1,3 +1,6 @@
 # typescript-express-sequelize
 Learn express sequelize with typescript.
-Link: https://blog.logrocket.com/using-sequelize-with-typescript/ <br />
+
+Link: https://rsseau.fr/en/programming/2019/06/19/express-typescript.html <br />
+
+npm rebuild
