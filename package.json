@@ -1,0 +1,27 @@
+{
+  "name": "typescript-express-sequelize",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/prtha112/typescript-express-sequelize.git",
+  "license": "MIT",
+  "scripts": {
+    "start": "node dist/index.js",
+    "dev": "nodemon src/index.ts",
+    "build": "tsc",
+    "test": "jest"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.13",
+    "@types/jest": "^27.0.1",
+    "@types/node": "^16.7.5",
+    "jest": "^27.1.0",
+    "nodemon": "^2.0.12",
+    "ts-jest": "^27.0.5",
+    "ts-node": "^10.2.1",
+    "typescript": "^4.4.2"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "sequelize": "^6.6.5"
+  }
+}
